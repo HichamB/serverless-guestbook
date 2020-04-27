@@ -1,7 +1,7 @@
 /**
  * Web application
  */
-const apiUrl = 'https://CHANGEME.us-south.apigw.appdomain.cloud/guestbook';
+const apiUrl = 'https://9d828852.eu-de.apigw.appdomain.cloud/mallbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
@@ -12,16 +12,17 @@ const guestbook = {
     });
   },
   // add a single guestbood entry
-  add(name, email, comment) {
-    console.log('Sending', name, email, comment)
+  add(mallname, email, adress, capacity) {
+    console.log('Sending', mallname, adress, capacity)
     return $.ajax({
       type: 'PUT',
       url: `${apiUrl}/entries`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
-        name,
+        mallname,
         email,
-        comment,
+        adress,
+        capacity
       }),
       dataType: 'json',
     });
@@ -63,7 +64,8 @@ const guestbook = {
     guestbook.add(
       $('#name').val().trim(),
       $('#email').val().trim(),
-      $('#comment').val().trim()
+      $('#adress').val().trim(),
+      $('#capacity').val().trim()
     ).done(function(result) {
       // reload entries
       loadEntries();
