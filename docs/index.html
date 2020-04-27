@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guestbook - a serverless web application</title>
+  <title>Mallbook - a serverless web application</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
 </head>
@@ -13,7 +13,7 @@
   <section class="section">
     <div class="container">
       <h1 class="title is-1">
-        Guestbook
+        Mallbook
       </h1>
       <p class="subtitle">
         A serverless web application
@@ -22,7 +22,7 @@
       <div class="columns">
         <div class="column">
           <h3 class="title is-3">
-            Messages from past visitors
+            Add a mall 
           </h3>
           <div id="entries"></div>
         </div>
@@ -32,25 +32,30 @@
           </h3>
           <form id="addEntry">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Mall Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your name" id="name">
+                <input class="input" type="text" placeholder="mall name" id="mallname">
               </div>
             </div>
             <div class="field">
-              <label class="label">Email</label>
+              <label class="label">Mall Email</label>
               <div class="control">
-                <input class="input" type="text" placeholder="your email" id="email">
+                <input class="input" type="text" placeholder="mall email" id="email">
+              </div>
+               <div class="field">
+              <label class="label">Mall Adress</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="adress" id="adress">
+              </div>
+                  <div class="field">
+              <label class="label">Mall Capacity</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="adress" id="capacity">
               </div>
             </div>
-            <div class="field">
-              <label class="label">Comment</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="your comment" id="comment"></textarea>
-              </div>
-            </div>
+           
             <div class="control">
-              <button class="button is-primary">Send your message</button>
+              <button class="button is-primary">Add Mall</button>
             </div>
           </form>
         </div>
