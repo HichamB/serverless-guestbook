@@ -12,7 +12,7 @@ function main(params) {
 	    adress: row.doc.adress,
 	    capacity: row.doc.capacity,
 	    createdAt: row.doc.createdAt,
-	    icon: (row.doc.email ? `https://secure.gravatar.com/avatar/${md5.hash(row.doc.email.trim().toLowerCase())}?s=64` : null)
+	    icon: (row.doc.email+" "+row.doc.mallname ? `https://secure.gravatar.com/avatar/${md5.hash(row.doc.email.trim().toLowerCase())}?s=64` : null)
     }})
 	};
 }
