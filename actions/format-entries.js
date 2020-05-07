@@ -7,9 +7,8 @@ function main(params) {
   // params contain the "rows" coming from Cloudant including the full documents
   return {
     entries: params.rows.map((row) => { return {
-      mallname: row.doc.mallname,
+     	    mallname: row.doc.mallname,
 	    email: row.doc.email,
-	    comment: row.doc.comment,
 	    adress: row.doc.adress,
 	    capacity: row.doc.capacity,
 	    createdAt: row.doc.createdAt,
