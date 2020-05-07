@@ -9,9 +9,11 @@ function main(params) {
 	return {
     doc: {
       createdAt: new Date(),
-	    name: params.name,
+	    mallname: params.mallname,
 	    email: params.email,
-	    comment: params.comment,
+	    adress: params.adress,
+	    capacity: params.capacity,
+	   
 	  }
   };
 }
