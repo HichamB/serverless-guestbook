@@ -62,7 +62,7 @@ const guestbook = {
     e.preventDefault();
 
     guestbook.add(
-      $('#name').val().trim(),
+      $('#mallname').val().trim(),
       $('#email').val().trim(),
       $('#adress').val().trim(),
       $('#capacity').val().trim()
